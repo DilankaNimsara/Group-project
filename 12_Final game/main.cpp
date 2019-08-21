@@ -118,7 +118,13 @@ void timer(int){ 							// not use any variable so dont pass variable
 }
 
 // --------------------------------------------- keyboard input funcion ---------------------------------------------
-void keybord(int key,int,int){					    
+void keybord(int key,int,int){	
+
+if(key == GLUT_KEY_END)
+    {
+        exit(0);  // press end key to exit
+    }
+					    
 	switch(key){
 		
 		case GLUT_KEY_UP:					// turn up
